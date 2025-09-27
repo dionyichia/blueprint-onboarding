@@ -1,0 +1,141 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FAFAFA;
+  border-bottom: lightgrey 0.5px solid;
+  padding: 1rem 0 0.5rem 0;
+
+  position: sticky;
+  top: 0;        /* stick to top of scrollable container */
+  z-index: 10;   /* ensure it stays above content */
+}
+
+.header-left,
+.header-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header-center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap; /* prevents wrapping */
+  min-width: 0; /* ensures flexbox doesn't break shrinking */
+}
+.back-button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-left: 1rem;
+}
+
+.back-button svg {
+  display: block;  /* removes inline extra space */
+  color: #4E4B66;
+}
+
+
+.back-button:hover {
+  background-color: #e0e0e0;
+}
+
+.logo {
+  margin-right: 8px;
+}
+
+.header-text {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Post */
+
+.post {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  padding: 1rem 1rem 1rem 1rem ;
+}
+
+.post-head {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.user-profile {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.profile-pic {
+  height: 24px;
+  width: 24px;
+  font-weight: 400;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  color: #979797;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding: 0.2rem 0 0.2rem 0;
+}
+
+.post-foot {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.share {
+  background-color: transparent;
+  border: none;
+}
+
+/* Comment */
+
+.comment-section {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  padding: 0.2rem 0 0.2rem 0;
+}
+
+.comment {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: left;
+  text-align: left;
+  gap: 0.2rem;
+}
+
+.comment-head {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
