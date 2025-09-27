@@ -88,11 +88,19 @@
   color: #979797;
 }
 
-.post-img {
+.post-img-container {
+  position: relative;
   width: 100%;
   height: auto;
+}
+
+.post-img {
+  object-fit: contain;
   border-radius: 10px;
   padding: 0.2rem 0 0.2rem 0;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .post-foot {

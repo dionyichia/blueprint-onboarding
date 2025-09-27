@@ -70,8 +70,8 @@ export default function Home() {
         <div className={styles.content}>
           <Header />
 
-          {posts.map(post => (
-            <Post {...post} />
+          {posts.map((post, index) => (
+            <Post key={index} {...post} />
           ))}
         </div>
       </div>

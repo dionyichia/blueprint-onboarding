@@ -1,5 +1,6 @@
 import React from 'react';
 import { LuUserCircle as ProfileIcon } from 'react-icons/lu';
+import Image from 'next/image';
 
 export interface UserProfileProps {
   username: string;
@@ -11,7 +12,11 @@ const UserProfile = (props: UserProfileProps) => {
     <div className="user-profile">
       <div>
         {props.pic ? (
-          <img src={props.pic} className="profile-pic" />
+          <Image
+            src={props.pic}
+            className="profile-pic"
+            alt="user-profile-pic"
+          />
         ) : (
           <ProfileIcon className="profile-pic" strokeWidth={1.5} />
         )}

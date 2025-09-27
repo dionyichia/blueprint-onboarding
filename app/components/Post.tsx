@@ -1,6 +1,7 @@
 import React from 'react';
 import { FiHeart as HeartIcon } from 'react-icons/fi';
 import { GoPaperAirplane as ShareIcon } from 'react-icons/go';
+import Image from 'next/image';
 import CommentSection, { CommentSectionProps } from './CommentSection';
 import UserProfile, { UserProfileProps } from './UserProfile';
 
@@ -23,9 +24,16 @@ const Post = (props: PostProps) => {
 
       <div>{props.description}</div>
 
-      <div>
+      <div className="post-img-container">
         {props.img && (
-          <img src={props.img} className="post-img" alt="Post image" />
+          <Image
+            src={props.img}
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="post-img"
+            alt="Post image"
+          />
         )}
       </div>
 

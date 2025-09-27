@@ -8,8 +8,8 @@ export interface CommentSectionProps {
 const CommentSection = (props: CommentSectionProps) => {
   return (
     <div className="comment-section">
-      {props.comments.map(comment => (
-        <Comment {...comment} />
+      {props.comments.map((comment, index) => (
+        <Comment key={index} {...comment} />
       ))}
     </div>
   );
