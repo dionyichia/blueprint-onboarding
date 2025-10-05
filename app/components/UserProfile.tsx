@@ -10,7 +10,7 @@ export interface UserProfileProps {
 const UserProfile = (props: UserProfileProps) => {
   return (
     <div className="user-profile">
-      <div>
+      <div className="profile-pic-container">
         {props.pic ? (
           <Image
             src={props.pic}
