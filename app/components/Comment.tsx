@@ -8,11 +8,18 @@ export interface CommentProps {
 }
 
 const Comment = (props: CommentProps) => {
+  const dateObject = new Date(props.date);
+  const formattedDate = dateObject.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+
   return (
     <div className="comment">
       <div className="comment-head">
         <UserProfile {...props.user} />
-        <div className="date">{props.date}</div>
+        <div className="date">{formattedDate}</div>
       </div>
 
       <div>{props.description}</div>

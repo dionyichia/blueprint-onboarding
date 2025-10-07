@@ -1,0 +1,7 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript", "prettier"],
+  "rules": {
+    "@next/next/no-duplicate-head": "off"
+  },
+  "ignorePatterns": ["node_modules/", ".next/"]
+}
