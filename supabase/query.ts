@@ -1,11 +1,6 @@
 import { supabase } from '@/supabase/client';
 import { Comment, Post } from './types';
 
-(async () => {
-  const { data, error } = await supabase.from('Posts').select('*');
-  console.log('Posts test:', { data, error });
-})();
-
 export class ApiService {
   // Fetch Posts
   static async fetchPost(): Promise<Post[]> {

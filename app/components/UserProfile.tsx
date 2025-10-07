@@ -1,5 +1,5 @@
 import React from 'react';
-import { LuUserCircle as ProfileIcon } from 'react-icons/lu';
+import { LuCircleUser as ProfileIcon } from 'react-icons/lu';
 import Image from 'next/image';
 
 export interface UserProfileProps {
