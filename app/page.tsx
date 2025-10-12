@@ -84,7 +84,7 @@ export default function Home() {
     };
 
     loadPosts();
-  });
+  }, []);
 
   return (
     <main className={styles.main}>
